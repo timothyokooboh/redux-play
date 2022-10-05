@@ -14,6 +14,15 @@
 
 // export const store = createStore(reducerFn);
 
+/**
+  RULES OF REDUCER
+  
+  1. Must accept state and action params
+  2. state must have a default value
+  3. action must have a type property
+  4. must return state by default
+*/
+
 import { configureStore } from "@reduxjs/toolkit";
 import userSlice from "./userStore";
 
