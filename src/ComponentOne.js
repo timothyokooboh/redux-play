@@ -3,9 +3,9 @@ import { userActions } from "./store/userStore";
 import { addGender } from "./store/userStore";
 
 const ComponentOne = () => {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.user);
   const dispatch = useDispatch();
-  const gender = state.user.gender;
+  const gender = state.gender;
 
   const setGender = () => {
     dispatch(addGender({ gender: "male" }));
