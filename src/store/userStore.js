@@ -23,7 +23,7 @@ export const addGender = (payload) => {
       return new Promise((resolve) => {
         setTimeout(() => {
           dispatch(userActions.setGender(payload));
-        }, 5000);
+        }, 1000);
       });
     };
 
